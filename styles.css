@@ -1,0 +1,229 @@
+/* Reset */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+/* ------------------- */
+/* Mobile first */
+body{
+    padding:13vh 0 2vh 0;
+    font-family: 'Spartan', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+main{
+    height:100%;
+    width:min(90%,20rem);
+    
+}
+h1{
+    font-weight:700;
+    margin-bottom:4vh;
+    padding-right:2vw;
+    padding-left:2vw;
+}
+p{
+    margin-top:0.5rem;
+}
+
+
+
+/* Main part with heading */
+.main-text{
+    text-align:center;
+    margin-bottom:5vh;
+    color: hsl(300, 43%, 22%);
+    position:relative;
+}
+.main-text>p{
+    font-weight:400;
+    letter-spacing:1px;
+    font-size:calc(0.7vh + 10px);
+}
+/* Star review part */
+.star-reviews{
+    margin-bottom:3rem;
+}
+.star-reviews-card{
+    background-color:hsl(300, 24%, 96%);
+    text-align:center;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    font-weight:700;
+    padding:1rem;
+    font-size:calc(1vh + 5px);
+    color: hsl(300, 43%, 22%);
+    border-radius:10px;
+}
+
+/* Background */
+.background-circle-mobile{
+    position:absolute;
+    z-index:-1000;
+    height:30vh;
+    width:100%;
+    left:0;
+    top:0;
+}
+.background-circle-desktop{
+    display:none;
+}
+/* Review part */
+.card{
+    background-color:hsl(300, 43%, 22%);
+    color:white;
+    padding:5vh 4vh 4vh 4vh;
+    font-size:calc(0.8vh + 8px);
+    margin-bottom:1rem;
+    border-radius:10px;
+}
+.people-image{
+   height:3rem;
+   border-radius:50%;
+    display:inline-block;
+}
+.review-text{
+    text-align:left;
+    line-height:1.5;
+    
+}
+.flex{
+    display:flex;
+    gap:1rem;
+    margin-bottom:2rem;
+}
+.pink-text{
+    color:hsl(333, 80%, 67%);
+    margin-top:10px;
+}
+.name{
+    margin-top:6px;
+    font-weight:500;
+}
+
+
+
+
+
+
+/* ---------------------- */
+/* Desktop design */
+@media (min-width:45em){
+    body{
+        padding:8vh 2vw 1vh 2vw;
+        
+    }
+    main{
+        height:100%;
+        width:60rem;
+        position:relative;
+    }
+
+
+    /* Upper part of desktop */
+    .upper-body{
+        display:flex;
+    }
+    h1{
+        padding:0;
+        padding-right:3rem;
+        font-size:6vh;
+        font-weight:700;
+        line-height:1;
+        margin-bottom:0.8rem;
+    }
+    .main-text{
+        width:50%; 
+         padding:4rem 4rem 1rem 0;
+         text-align:left;}
+
+    .main-text>p{
+        font-size:1.8vh;
+        margin-bottom:0;
+        padding-right:3.4rem;
+        line-height:1.5;
+    }
+
+    .card{
+        padding:0 4vh 4vh 4vh;
+        font-size:calc(0.8vh + 8px);
+        margin-bottom:1rem;
+        border-radius:10px;
+    }
+   
+
+    /* Star reviews */
+     .star-reviews{
+         padding-top:3.3rem;
+         width:50%;
+         margin-bottom:0;
+         padding-bottom:0;
+     }
+ 
+     .star-reviews-card{
+       width:20rem;
+       display:flex;
+       align-items:center;
+       gap:1.4rem;
+       margin-bottom:0;
+     }
+     /* text next to review stars */
+     .star-reviews-card>div p{
+        height:100%;
+        margin-top:auto;
+        margin-bottom:bottom;
+      }
+      /* review yellow stars */
+      .star-reviews-card>div svg{
+          height:0.8rem;
+      }
+      /* positioning second card of star review */
+      .star-reviews-card:nth-child(2){
+          margin-left:auto;
+          margin-right:auto;
+      }
+      /* positioning third card of star review */
+      .star-reviews-card:nth-child(3){
+        margin-left:auto;
+    }
+
+
+     /* Reviews of people */
+     .people-reviews{
+         display:flex;
+         gap:2rem;
+         height:100%;
+     }
+      .card{
+          height:fit-content;
+          width:30%;
+          font-size:1.8vh;
+          padding-top:1.5rem;
+      }
+      .card>p{
+          margin-top:0;
+      }
+      .second{
+          margin-top:1.5rem;
+      }
+      .third{
+          margin-top:3rem;
+      }
+      .flex{
+          margin-bottom:1.5rem;
+      }
+    
+
+      /* Background-circle */
+      .background-circle-mobile{
+          display:none;
+      }
+      .background-circle-desktop{
+          display:block;
+          position:absolute;
+          top:0;
+          left:0;
+      }
+}
