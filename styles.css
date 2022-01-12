@@ -110,7 +110,7 @@ p{
 
 /* ---------------------- */
 /* Desktop design */
-@media (min-width:45em){
+@media (min-width:860px){
     body{
         padding:8vh 2vw 1vh 2vw;
         
