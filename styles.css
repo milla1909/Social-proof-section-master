@@ -163,18 +163,13 @@ p{
      }
  
      .star-reviews-card{
-       width:22rem;
+       width:26rem;
        display:flex;
        align-items:center;
        gap:1.4rem;
        margin-bottom:0;
      }
-     /* text next to review stars */
-     .star-reviews-card>div p{
-        height:100%;
-        margin-top:auto;
-        margin-bottom:bottom;
-      }
+
       /* review yellow stars */
       .star-reviews-card>div svg{
           height:0.8rem;
