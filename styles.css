@@ -112,12 +112,12 @@ p{
 /* Desktop design */
 @media (min-width:860px){
     body{
-        padding:8vh 2vw 1vh 2vw;
+        padding:8vh 1vw 0 1vw;
         
     }
     main{
         height:100%;
-        width:60rem;
+        width:65rem;
         position:relative;
     }
 
@@ -136,7 +136,7 @@ p{
     }
     .main-text{
         width:50%; 
-         padding:4rem 4rem 1rem 0;
+         padding:4rem 4rem 1rem 0rem;
          text-align:left;}
 
     .main-text>p{
@@ -156,13 +156,14 @@ p{
      }
  
      .star-reviews-card{
-       width:26rem;
+       width:28rem;
+       height:min-content;
        display:flex;
        align-items:center;
        gap:1.4rem;
        margin-bottom:0;
      }
-
+   
       /* review yellow stars */
       .star-reviews-card>div svg{
           height:0.8rem;
@@ -184,7 +185,7 @@ p{
          gap:2rem;
          height:100%;
      }
-       .card{
+      .card{
           height:12rem;
           width:30%;
           padding:1.5rem;
@@ -196,6 +197,7 @@ p{
     }
       .card>p{
           margin-top:0;
+          margin-bottom:10px;
       }
       .second{
           margin-top:1.5rem;
